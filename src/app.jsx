@@ -7,8 +7,7 @@ import { Portfolio } from "./cmps/portfolio/portfolio"
 import { Testimonials } from "./cmps/testimonials/testimonials"
 import { Contacts } from "./cmps/contacts/contacts"
 import { Footer } from "./cmps/footer/footer"
-
-
+console.log('hi')
 
 export function App() {
     return (
