@@ -1,0 +1,21 @@
+// ============= MEDIA QUERIES (MEDIUM DEVICES============= //
+@media screen and (max-width:1024px) {
+    .continer {
+        width: $container-width-md;
+    }
+
+    section {
+        margin-top: 6rem;
+    }
+}
+
+// ============= MEDIA QUERIES (SMALL DEVICES============= //
+@media screen and (max-width:600px) {
+    .continer {
+        width: $container-width-sm;
+    }
+
+    section {
+        margin-top: 2rem;
+    }
+}
