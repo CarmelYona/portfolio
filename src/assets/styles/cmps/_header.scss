@@ -32,17 +32,27 @@ header {
     }
 
     .me {
-        // background-color: $clr-praimary;
         width: 22rem;
         height: 30rem;
+        // background-color: $clr-praimary;
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        margin-top: 4rem;
-
+        
+        padding: 5rem 1.5rem 1.5rem 1.5rem;
+        
         img {
             border-radius: 12rem 12rem 0 0;
         }
+    }
+
+    .scroll-down {
+        position: absolute;
+        right: -2.5rem;
+        bottom: 5rem;
+        transform: rotate(90deg);
+        font-weight: 300;
+        font-size: 0.9rem;
     }
 
 }

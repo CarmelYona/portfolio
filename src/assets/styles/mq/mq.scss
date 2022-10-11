@@ -7,15 +7,27 @@
     section {
         margin-top: 6rem;
     }
+
 }
 
 // ============= MEDIA QUERIES (SMALL DEVICES============= //
 @media screen and (max-width:600px) {
     .continer {
         width: $container-width-sm;
+        background-color: red;
     }
 
     section {
         margin-top: 2rem;
+    }
+
+
+    .header-socials,
+    .scroll-down {
+        display: none;
+    }
+
+    .me {
+        margin-top: 4.5rem;
     }
 }
