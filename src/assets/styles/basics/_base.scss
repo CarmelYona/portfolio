@@ -34,11 +34,11 @@ body {
 
 section {
     margin-top: 8rems;
+    height: 100vh;
 }
 
 section>h2,
-section>
-h5 {
+section>h5 {
     text-align: center;
     color: $clr-light;
 }
