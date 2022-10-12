@@ -8,6 +8,20 @@
         margin-top: 6rem;
     }
 
+    .about-container {
+        grid-template-columns: 1fr;
+        gap: 0;
+
+        .about-me {
+            width: 50%;
+            margin: 2rem auto 4rem;
+        }
+
+        .about-content p {
+            margin: 1rem 0 1.5rem;
+        }
+    }
+
 }
 
 // ============= MEDIA QUERIES (SMALL DEVICES============= //
@@ -29,5 +43,27 @@
 
     .me {
         margin-top: 4.5rem;
+    }
+
+    .about-container {
+        .about-me {
+            width: 65%;
+            margin: 0 auto 3rem;
+        }
+
+        .about-content {
+            text-align: center;
+
+            .about-cards {
+                grid-template-columns: 1fr 1fr;
+                gap: 1rem;
+            }
+
+            p {
+                margin: 1.5rem 0;
+            }
+        }
+
+
     }
 }

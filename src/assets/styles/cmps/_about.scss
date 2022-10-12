@@ -1,0 +1,68 @@
+.about-container {
+    display: grid;
+    grid-template-columns: 35% 50%;
+    gap: 15%;
+
+    .about-me {
+        width: 100%;
+        aspect-ratio: 1/1;
+        border-radius: 2rem;
+        background: linear-gradient(45deg,
+                transparent,
+                $clr-primary,
+                transparent);
+        display: grid;
+        place-items: center;
+
+        .about-me-img {
+            height: 100%;
+            width: 100%;
+            border-radius: 2rem;
+            overflow: hidden;
+            transform: rotate(10deg);
+            transition: $transition;
+
+            &:hover {
+                transform: rotate(0);
+            }
+        }
+    }
+
+    .about-content {
+        .about-cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+
+            .about-card {
+                background: $clr-bg-variant;
+                border-radius: 1rem;
+                padding: 2rem;
+                border: 1px solid transparent;
+                text-align: center;
+                transition: $transition;
+
+                &:hover {
+                    background: transparent;
+                    border-color: $clr-primary-variant;
+                    cursor: default;
+                }
+
+            }
+        }
+
+        .about-icon h5 {
+            font-size: 0.95rem;
+        }
+
+        small {
+            font-size: 0.7rem;
+            color: $clr-light;
+        }
+
+        p {
+            margin: 2rem 0 2.6rem;
+            color: $clr-light;
+        }
+    }
+}

@@ -27,14 +27,14 @@ header {
             content: "";
             width: 1px;
             height: 2rem;
-            background: $clr-praimary;
+            background: $clr-primary;
         }
     }
 
     .me {
         width: 22rem;
         height: 30rem;
-        // background-color: $clr-praimary;
+        // background-color: $clr-primary;
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
