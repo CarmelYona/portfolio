@@ -22,6 +22,15 @@
         }
     }
 
+    .services-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+
+        .service {
+            height: auto;
+        }
+    }
+
 }
 
 // ============= MEDIA QUERIES (SMALL DEVICES============= //
@@ -74,4 +83,10 @@
             padding: 2rem 1rem;
         }
     }
+
+    .services-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
 }
