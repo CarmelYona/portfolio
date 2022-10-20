@@ -1,8 +1,6 @@
 [{
         "_id": "101",
-        "title": "Lipstick",
-        "price": 45,
-        "imgUrl": "",
+        "title": "Mr.BotCoin",
         "inCart": "flase"
     },
     {

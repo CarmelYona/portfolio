@@ -31,6 +31,11 @@
         }
     }
 
+    .portfolio-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.2rem;
+    }
+
 }
 
 // ============= MEDIA QUERIES (SMALL DEVICES============= //
@@ -87,6 +92,11 @@
     .services-container {
         grid-template-columns: 1fr;
         gap: 1.5rem;
+    }
+
+    .portfolio-container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
     }
 
 }
