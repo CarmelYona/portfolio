@@ -108,4 +108,13 @@
         width: $container-width-sm;
     }
 
+    .permalinks {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .footer-socials {
+        margin-bottom: 2.6rem;
+    }
+
 }
