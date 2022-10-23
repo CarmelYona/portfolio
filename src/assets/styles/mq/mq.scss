@@ -36,6 +36,11 @@
         gap: 1.2rem;
     }
 
+    .container.contact-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
 }
 
 // ============= MEDIA QUERIES (SMALL DEVICES============= //
@@ -97,6 +102,10 @@
     .portfolio-container {
         grid-template-columns: 1fr;
         gap: 1rem;
+    }
+
+    .container.contact-container {
+        width: $container-width-sm;
     }
 
 }
