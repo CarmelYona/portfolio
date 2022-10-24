@@ -16,8 +16,6 @@ export function Header() {
                 <img src={Me} alt="me" />
             </div>
             <a href="#contact" className="scroll-down">Scroll Down</a>
-
-
         </div>
     </header>
 }

@@ -15,9 +15,9 @@ export const Footer = () => {
         </ul>
 
         <div className="footer-socials flex">
-            <a href="https://www.facebook.com/carmel.yona/"><FaFacebookF /></a>
-            <a href="https://www.instagram.com/carmelyona/"><FiInstagram /></a>
-            <a href="https://www.linkedin.com/in/carmelyona/"><BsLinkedin /></a>
+            <a href="https://www.facebook.com/carmel.yona/" target="_blank"><FaFacebookF /></a>
+            <a href="https://www.instagram.com/carmelyona/" target="_blank"><FiInstagram /></a>
+            <a href="https://www.linkedin.com/in/carmelyona/" target="_blank"><BsLinkedin /></a>
             <a href="https://github.com/CarmelYona" target="_blank" rel="noopener noreferrer"><BsGithub /></a>
         </div>
 

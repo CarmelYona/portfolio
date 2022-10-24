@@ -6,26 +6,79 @@ nav {
     position: fixed;
     left: 50%;
     transform: translate(-50%);
-    bottom: 2rem;
+    bottom: 4rem;
     gap: 0.8rem;
     border-radius: 3rem;
     backdrop-filter: blur(15px);
 
-    a {
+    a,
+    .share {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         background: transparent;
         padding: 0.9rem;
         border-radius: 50%;
         display: flex;
         color: $clr-light;
         font-size: 1.1rem;
+        cursor: pointer;
+        transition: $transition;
 
         &:hover {
             background: rgb(0, 0, 0, 0.3);
         }
 
-        .active {
-            background: $clr-primary;
-            color: $clr-bg;
+    }
+
+    .share-active {
+        background: rgb(0, 0, 0, 0.3);
+    }
+
+
+
+    .share-wrapper {
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+
+    }
+
+
+
+    .btn-share {
+        position: absolute;
+        visibility: hidden;
+        transition: all .5s;
+        z-index: 1;
+        background: $clr-light;
+        color: $clr-bg;
+
+        &:hover {
+            background: rgb(0, 0, 0, 0.3);
+            color: $clr-white;
         }
     }
+}
+
+.active {
+    background: $clr-primary;
+    color: $clr-bg;
+
+    .btn-share {
+        visibility: visible;
+    }
+
+    .btn-share-git {
+        transform: translateY(-65px);
+    }
+
+    .btn-share-face {
+        transform: translateY(+65px);
+    }
+
+    .btn-share-li {
+        transform: translateX(+65px);
+    }
+
 }
