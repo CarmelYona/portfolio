@@ -53,6 +53,7 @@ nav {
         z-index: 1;
         background: $clr-light;
         color: $clr-bg;
+        opacity: 0;
 
         &:hover {
             background: rgb(0, 0, 0, 0.3);
@@ -67,6 +68,7 @@ nav {
 
     .btn-share {
         visibility: visible;
+        opacity: 1;
     }
 
     .btn-share-git {

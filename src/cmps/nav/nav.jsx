@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { FacebookButton } from 'react-social'
 import { AiOutlineHome } from 'react-icons/ai'
 import { AiOutlineUser } from 'react-icons/ai'
 import { BiBook } from 'react-icons/bi'
@@ -15,8 +16,6 @@ export const Nav = () => {
     const [activeNav, setActiveNav] = useState('#')
     const [activeShare, setActiveShare] = useState(false)
 
-
-    console.log(activeShare)
     return <nav className="flex">
         <a href="#" onClick={() => setActiveNav('#')} className={activeNav === '#' ? 'active' : ''}><AiOutlineHome /></a>
         <a href="#about" onClick={() => setActiveNav('about')} className={activeNav === 'about' ? 'active' : ''}><AiOutlineUser /></a>
@@ -27,6 +26,7 @@ export const Nav = () => {
                 {activeShare ? <AiOutlineClose /> : <FiShare className='share-icon' />}
                 <>
                     <a href="https://github.com/CarmelYona" className="btn-share btn-share-git" target="_blank"><BsGithub /></a>
+                    {/* <FacebookButton url="https://www.facebook.com/carmel.yona/" appId="515026037143515" className="btn-share btn-share-face" target="_blank"><FaFacebookF /></FacebookButton> */}
                     <a href="https://www.facebook.com/carmel.yona/" className="btn-share btn-share-face" target="_blank"><FaFacebookF /></a>
                     <a href="https://www.linkedin.com/in/carmelyona/" className="btn-share btn-share-li" target="_blank"><BsLinkedin /></a>
                 </>
