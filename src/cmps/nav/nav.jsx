@@ -16,6 +16,7 @@ export const Nav = () => {
     const [activeNav, setActiveNav] = useState('#')
     const [activeShare, setActiveShare] = useState(false)
 
+
     return <nav className="flex">
         <a href="#" onClick={() => setActiveNav('#')} className={activeNav === '#' ? 'active' : ''}><AiOutlineHome /></a>
         <a href="#about" onClick={() => setActiveNav('about')} className={activeNav === 'about' ? 'active' : ''}><AiOutlineUser /></a>
